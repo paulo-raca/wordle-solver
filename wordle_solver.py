@@ -307,7 +307,7 @@ def cli_main():
         help='File containing the vocabulary of known words')
 
     parser.add_argument('--guess', action='store_true', 
-                        help='Guessing it performed the iteractive user')
+                        help='Guessing is performed by the iteractive user')
     parser.add_argument('--check', action='store_true', 
                         help='Check is performed by iteractive user')
     parser.add_argument('--hints', action='store_true', 
