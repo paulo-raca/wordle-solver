@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "wordle-solver"
+version = "0.1.0"
+description = "Solving wordle is for computers"
+authors = ["Paulo Costa <eu@paulo.costa.nom.br>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+wordle_solver = 'wordle_solver:cli_main'
+
+[tool.poetry.dependencies]
+python = "^3.11"
+termcolor = "^2.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+profile = "black"
+indent = 4
+combine_star = true
+combine_as_imports = true
+lines_after_imports = 2
+known_pytest = ["pytest"]
+sections = ["FUTURE", "STDLIB", "PYTEST", "ASGI", "THIRDPARTY", "LOCALFOLDER"]
